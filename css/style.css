@@ -1,0 +1,218 @@
+	/* HEADER */
+
+	body{
+		background-color: #f9f9f9;
+	}
+
+	.wrapper{
+		margin: 0 auto;
+		margin-top: 5px;
+		width: 1060px;
+		height: 950px;
+		background-color: #ffffff;
+
+		-webkit-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.3);
+		box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.3);
+	}
+
+	.logo {
+		margin: 0px; 
+		padding-top: 45px;
+		padding-left: 45px;
+  		width: 145px;
+  		height: 40px;
+	}
+	/* Верхнее меню навигации */
+	.navigation-menu-h{
+		/* фон верхнего меню */
+		margin-left: 46px;
+		margin-top: 38px;
+		width: 965px; 	
+	  	height: 40px;
+  		background-image: linear-gradient(to bottom, #5e5e5e, #444343);
+	}
+	.navigation-h{
+			/* боремся с загадочными отступами ul*/
+		    font-size:0; /* убираем горизонтальные отступы */
+    		line-height:0; /* ...и вертикальные в некоторых браузерах */
+    		letter-spacing:-1px; /* для webkitов */
+	}
+	.navigation-h li {
+		/* выстраиваем элементы списка в один ряд */ 
+			display: inline-block;
+	}
+	.navigation-h li a {
+			/* восстанавливаем значения после борьбы с отступами ul */
+			line-height:normal;
+		    letter-spacing:normal;
+		    			
+			/* оформим текст списка для кнопок */
+			text-decoration: none;
+			font-size: 14.67px;
+			font-family: 'Open Sans', sans-serif;
+
+	  		/* выровняем надписи по центру кнопки */
+			text-align: center;  /* горизонталь */
+			line-height: 38px;   /* вертикаль */
+
+			color: #ffffff;
+	}
+	.Main-h{
+		padding-left: 24px;
+		padding-right: 22px;
+	 	/* размер кнопки */
+		width: 96px; 	
+	  	height: 40px;
+		/* создадим прозрачный бордер, что бы кнопки при наведении не прыгали */
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+	.Main-h:hover{
+		/* создадим бордер при наведении мышки и изменим фон кнопки*/
+		border-left: 1px solid #838383;
+		border-right: 1px solid #838383;
+		background: #373737;
+		color: #ffffff;
+	}
+	.Product-h{
+		/* размер кнопки */
+		padding-left: 23px;
+		width: 76px; 	
+	  	height: 40px;
+		/* создадим прозрачный бордер, что бы кнопки при наведении не прыгали */
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+	.Product-h:hover{
+		/* создадим бордер при наведении мышки и изменим фон кнопки*/
+		border-left: 1px solid #838383;
+		border-right: 1px solid #838383;
+		background: #373737;
+		color: #ffffff;
+	}
+	.About-h{
+		/* размер кнопки */
+		padding-left: 62px;
+		width: 83px; 	
+	  	height: 40px;
+		/* создадим прозрачный бордер, что бы кнопки при наведении не прыгали */
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+	.About-h:hover{
+		/* создадим бордер при наведении мышки и изменим фон кнопки*/
+		border-left: 1px solid #838383;
+		border-right: 1px solid #838383;
+		background: #373737;
+		color: #ffffff;
+	}
+	.Contact-h{
+		/* размер кнопки */
+		padding-left: 43px;
+		width: 115px; 	
+	  	height: 40px;
+		/* создадим прозрачный бордер, что бы кнопки при наведении не прыгали */
+ 		border-left: 1px solid transparent;
+		border-right: 1px solid transparent; 
+	}
+	.Contact-h:hover{
+		/* создадим бордер при наведении мышки и изменим фон кнопки*/
+		border-left: 1px solid #838383;
+		border-right: 1px solid #838383;
+		background: #373737;
+		color: #ffffff;
+	}
+
+	/* Боковое меню */
+	.navigation-v {
+		float: left; /* включим обтекание текстом */
+		list-style: none; /* прячем маркеры */
+		margin-top: 40px;
+		margin-left: 47px;
+		width: 240px; /* ограничиваем ширину меню */
+		border: 1px solid #c8c8c8; /* зададим общую рамку для меню */
+		border-bottom: none; /* что бы в низу не появилась двойная линия на последней вкладке*/
+	}
+
+	.navigation-v li {
+		zoom: 1; /* чтобы в IE отступ между пуктами был как у всех браузеров */
+		border-bottom: 1px solid #c8c8c8;/* зададим рамку для вкладок */
+	}
+
+	.navigation-v li a {
+		display: block; /* меняем отображение на блок, чтобы иметь возможность задавать внутренние отступы */
+		padding-top: 11px;
+		padding-bottom: 11px;
+		padding-left: 20px;
+		text-decoration: none;
+		line-height: 16px; 
+		font-size: 13.5px;
+		font-family: 'Open Sans', sans-serif;
+		background: #ffffff;
+		color: #656363;
+		position: relative; /* для IE6, чтобы ссылка была кликабильной по всей своей площади */
+	}
+	.navigation-v li a:hover {
+		padding-left: 38px; 
+		background: #f9f9f9;
+	}
+	.content-img{
+		margin-top: 40px;
+		margin-left: 333px;
+		width: 677px;
+		height: 398px;
+		border: 1px solid #c8c8c8;
+	}
+	.content-img img{
+		display: block; 
+		margin: 0 auto;
+		margin-top: 46px;
+	}
+	.content-txt{
+		margin-left: 333px;
+	 	width: 677px;
+	 	line-height: 1.7;
+	 	font-size: 13.333px;
+		font-family: 'Open Sans', sans-serif;
+		color: #2c2c2c;
+	}
+	.content-txt p{
+		padding-top: 33px;
+		padding-left: 23px;
+		text-align: left;
+	}
+	/* FOOTER */
+	.footer-navi{
+		/* фон и размер футтерного меню */
+		margin-top: 54px;
+		margin-left: 46px;
+		width: 965px; 	
+	  	height: 40px;
+	  	background-color: #e1e1e1;
+  	}
+  	.footer-navi li{
+  		/* выстраиваем элементы списка в один ряд */ 
+		display: inline-block;
+  	}
+
+  	.footer-navi li a {
+  			padding-left: 24px;
+  			padding-right: 64px;
+			/* оформим текст списка*/
+			text-decoration: none;
+			font-size: 13.67px;
+			font-family: 'Open Sans', sans-serif;
+	  		/* выровняем надписи по центру футера */
+			text-align: center;  /* горизонталь */
+			line-height: 38px;   /* вертикаль */
+			color: #2c2c2c;
+	}
+	.footer-navi li a:hover {
+		text-decoration: underline;		
+	}
+
+	.footer-navi li:last-child{
+			padding-left: 213px;
+			font-size: 13.67px;
+}
